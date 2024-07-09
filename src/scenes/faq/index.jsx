@@ -41,7 +41,7 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        One More Important Questions
+                        One More Important Question
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
