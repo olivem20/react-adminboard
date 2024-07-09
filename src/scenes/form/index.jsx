@@ -13,7 +13,7 @@ const Form = () => {
     };
 
     return (
-        <Bxo m = "20px">
+        <Box m = "20px">
             <Header title="CREATE USER" subtitle="Create New User Profile"/>
 
             <Formik
@@ -35,76 +35,82 @@ const Form = () => {
                             gap="30px"
                             gridTemplateColumns="repeat(4, minmax(0, 1fr))"
                             sx={{
-                                "& > dic": { gridColumn: isNonMobile ? undefined : "span 4"},
+                                "& > div": { gridColumn: isNonMobile ? undefined : "span 4"},
                             }}
                         >
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidt
+                                variant="filled"
                                 type="text"
                                 label="First Name"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.firstName}
+                                values={values.firstName}
                                 name="firstName"
                                 error={!!touched.firstName && !!errors.firstName}
                                 helperText={touched.firstName && errors.firstName}
                                 sx={{ gridColumn: "span 2"}}
                             />
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidth
+                                variant="filled"
                                 type="text"
                                 label="Last Name"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.firstName}
+                                values={values.firstName}
                                 name="lastName"
                                 error={!!touched.lastName && !!errors.lastName}
                                 helperText={touched.lastName && errors.lastName}
                                 sx={{ gridColumn: "span 2"}}
                             />
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidth
+                                variant="filled"
                                 type="text"
                                 label="Email"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.firstName}
+                                values={values.firstName}
                                 name="email"
                                 error={!!touched.email && !!errors.email}
                                 helperText={touched.email && errors.email}
                                 sx={{ gridColumn: "span 4"}}
                             />
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidth
+                                variant="filled"
                                 type="text"
                                 label="Contact Number"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.contact}
+                                values={values.contact}
                                 name="contact"
                                 error={!!touched.contact && !!errors.contact}
                                 helperText={touched.contact && errors.contact}
                                 sx={{ gridColumn: "span 4"}}
                             />
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidth
+                                variant="filled"
                                 type="text"
                                 label="Address 1"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.address1}
+                                values={values.address1}
                                 name="firstName"
                                 error={!!touched.address1 && !!errors.address1}
                                 helperText={touched.address1 && errors.address1}
                                 sx={{ gridColumn: "span 4"}}
                             />
                             <TextField
-                                fullWidthvariant="filled"
+                                fullWidth
+                                variant="filled"
                                 type="text"
                                 label="Address 2"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                values={alues.address2}
+                                values={values.address2}
                                 name="firstName"
                                 error={!!touched.address2 && !!errors.address2}
                                 helperText={touched.address2 && errors.address2}
@@ -119,7 +125,7 @@ const Form = () => {
                     </form>
                 )}
             </Formik>
-        </Bxo>
+        </Box>
     );
 };
 
